@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dealz N Streakz — Daily Deals</title>
+  <meta name="description" content="Dealz N Streakz — daily deals, coupons & offers. Join our Telegram for the best steals." />
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="profile.jpg" alt="Dealz N Streakz" class="avatar" />
+      <div class="brand-text">
+        <h1 id="siteTitle">Dealz N Streakz</h1>
+        <p class="tagline">🔥 Crazy Deals &amp; Offers Hub</p>
+        <p class="subtag">Daily Amazon, Flipkart &amp; more — Coupons • Discounts • Flash Deals</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="https://t.me/daily_deals_knock" target="_blank" rel="noopener">Join Telegram</a>
+      <a class="handle" href="https://instagram.com/dealznstreakz_official" target="_blank" rel="noopener">@dealznstreakz_official</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="filters" role="tablist">
+        <button class="filter active" data-cat="all" aria-pressed="true">All</button>
+        <button class="filter" data-cat="electronics">Electronics</button>
+        <button class="filter" data-cat="fashion">Fashion</button>
+        <button class="filter" data-cat="grocery">Grocery</button>
+        <button class="filter" data-cat="coupons">Coupons</button>
+      </div>
+
+      <div class="search-wrap">
+        <input id="search" placeholder="Search deals or brands..." aria-label="Search deals or brands" />
+      </div>
+    </section>
+
+    <section id="dealsGrid" class="grid" aria-live="polite">
+      <!-- Deal cards injected by JS -->
+      <div id="loading" class="loading">Loading deals…</div>
+    </section>
+
+    <section class="footer-cta">
+      <p>Want this site to auto-update from a JSON file (editable via GitHub)? Edit <code>deals.json</code> in your repo to update all deals. Contact: <strong>t.me/daily_deals_knock</strong></p>
+    </section>
+
+    <section class="quick-add">
+      <h2>Add a quick deal (only on your phone — saves locally)</h2>
+      <form id="quickAddForm">
+        <input name="title" placeholder="Title (e.g., OnePlus Nord 3 - 40% off)" required />
+        <input name="store" placeholder="Store (Amazon/Flipkart/Other)" />
+        <input name="category" placeholder="Category (electronics, fashion...)" />
+        <input name="code" placeholder="Coupon code (optional)" />
+        <input name="url" placeholder="Deal URL (paste affiliate URL or product link)" required />
+        <input name="image" placeholder="Image URL (optional)" />
+        <button type="submit" class="btn">Add locally</button>
+        <button type="button" id="clearLocal" class="btn ghost">Clear local saves</button>
+      </form>
+      <p class="muted">Note: To make changes public, edit <code>deals.json</code> in your GitHub repo (steps below).</p>
+    </section>
+  </main>
+
+  <template id="dealTemplate">
+    <article class="card">
+      <img class="card-img" src="" alt="deal image" loading="lazy">
+      <div class="card-body">
+        <h3 class="card-title"></h3>
+        <p class="card-meta"></p>
+        <div class="card-actions">
+          <button class="copy-code">Copy Code</button>
+          <a class="open-deal btn" target="_blank" rel="noopener">Open deal</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
