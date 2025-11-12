@@ -1,0 +1,24 @@
+[
+  {
+    "id": "deal-001",
+    "title": "OnePlus Nord CE 3 Lite — ₹9999 with bank offer",
+    "store": "Amazon",
+    "category": "electronics",
+    "code": "NONE",
+    "url": "https://www.amazon.in/dp/B0XXXXXXX?tag=YOUR_AFFIL_TAG",
+    "image": "https://example.com/imgs/oneplus-nord.jpg",
+    "meta": "40% off (bank offer) — Limited stock",
+    "date": "2025-11-12"
+  },
+  {
+    "id": "deal-002",
+    "title": "Men's Shirt — Flat 60% off",
+    "store": "Flipkart",
+    "category": "fashion",
+    "code": "SHIRT60",
+    "url": "https://www.flipkart.com/item?affid=YOUR_FLIP_TAG",
+    "image": "https://example.com/imgs/shirt.jpg",
+    "meta": "Free shipping — coupon applies",
+    "date": "2025-11-11"
+  }
+]
