@@ -22,3 +22,14 @@
     "date": "2025-11-11"
   }
 ]
+,{
+  "id": "deal-002",
+  "title": "Men’s T-Shirt — ₹299 only",
+  "store": "Flipkart",
+  "category": "fashion",
+  "code": "NO CODE",
+  "url": "https://www.flipkart.com/xxxxx",
+  "image": "https://example.com/tshirt.jpg",
+  "meta": "Flat 70% off • Limited Offer"
+}
+
